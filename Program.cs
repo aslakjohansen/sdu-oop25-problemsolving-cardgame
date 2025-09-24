@@ -1,3 +1,5 @@
+// -- init
+
 Card[] deck = new Card[20];
 
 Random rand = new Random();
@@ -8,9 +10,13 @@ for (int i=0; i<deck.Length ; i++) {
   deck[i] = new Card {suit=suit, value=value};
 }
 
+// -- main
+
 foreach (Card card in deck) {
   Console.WriteLine(card.value+" of "+card.suit);
 }
+
+// -- data types
 
 enum Suit {
   Diamonds,
