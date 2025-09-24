@@ -12,9 +12,19 @@ for (int i=0; i<deck.Length ; i++) {
 
 // -- main
 
+int largest = -1;
+
 foreach (Card card in deck) {
-  Console.WriteLine(card.value+" of "+card.suit);
+  if (card.value > largest) {
+    largest = card.value;
+  }
 }
+
+Console.WriteLine(largest);
+
+//foreach (Card card in deck) {
+//  Console.WriteLine(card.value+" of "+card.suit);
+//}
 
 // -- data types
 
